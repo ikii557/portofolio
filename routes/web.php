@@ -13,6 +13,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pages.dasboard.index');
+Route::get('/index', function () {
+    return view('pages.index');
+});
+Route::get('/about', function () {
+    return view('pages.about');
+});
+Route::get('/contact', function () {
+    return view('pages.contact');
+});
+Route::get('/portofolio-detail', function () {
+    return view('pages.portofolio-detail');
+});
+Route::get('/portfolio', function () {
+    return view('pages.portfolio');
+});
+Route::get('/resume', function () {
+    return view('pages.resume');
+});
+Route::get('/services', function () {
+    return view('pages.services');
+});
+Route::get('/starter', function () {
+    return view('pages.starter');
 });

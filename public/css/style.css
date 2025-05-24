@@ -1,0 +1,340 @@
+/* Card Container */
+.card {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+/* Header */
+.card-header h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #007BFF;
+}
+
+/* Subtitles */
+.subtitle {
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+/* Call-to-Action Buttons */
+.cta-buttons {
+  margin-top: 20px;
+}
+
+.cta-buttons .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-right: 10px;
+  transition: background 0.3s ease;
+}
+
+.cta-buttons .btn:hover {
+  background: #0056b3;
+}
+
+.btn-secondary {
+  background: #6c757d;
+}
+
+.btn-secondary:hover {
+  background: #5a6268;
+}
+
+/* Social Links */
+.social-links a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.social-links i {
+  margin-right: 8px;
+  color: #007BFF;
+}
+
+/* Card Body */
+.card-body {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  line-height: 1.6;
+  font-size: 16px;
+  color: #555;
+  font-family: 'Segoe UI', sans-serif;
+  
+}
+
+.card-body h3 {
+  margin-top: 30px;
+  font-size: 20px;
+  color: #007BFF;
+}
+
+.card-body ul {
+  padding-left: 20px;
+}
+
+.card-body ul li {
+  margin-bottom: 8px;
+}
+
+.card-body p {
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cta-buttons .btn {
+      display: block;
+      margin-bottom: 10px;
+  }
+
+  .social-links {
+      margin-top: 20px;
+  }
+}
+
+.menu {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #CAE8BD;
+  top: 50px;
+  right: 0;
+  z-index: 1000;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  color: inherit; /* opsional: agar warnanya tidak berubah */
+}
+
+.menu.active {
+  display: block;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.navbar-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #CAE8BD;
+  color: white;
+  text-align: center;
+}
+
+/* navbar */
+/* Default menu di mobile: hidden */
+
+.navbar a {
+  text-decoration: none;
+  color: #333; /* atur sesuai warna yang kamu mau */
+}
+
+/* Tampilkan saat tombol diklik */
+.menu.active {
+  display: block;
+}
+
+/* Tombol hamburger */
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  text-align: center;
+}
+.profile-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* agar lingkaran */
+  object-fit: cover;
+}
+#profile-image img {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+#profile-image:hover img {
+  transform: scale(1.2); /* Zoom in 1.2x saat hover */
+  z-index: 10;
+}
+/* Style gambar kecil */
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+/* Modal latar belakang */
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+/* Gambar yang dibesarkan */
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.4);
+}
+
+/* Tombol close (X) */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Responsive di layar besar */
+@media (min-width: 768px) {
+  .menu {
+    display: flex;
+    gap: 20px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+/* Layout & Spacing */
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+/* Kartu umum */
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+/* Header Kartu Biodata */
+.card-header {
+  background-color: #f8f9fa;
+  padding: 2rem;
+}
+
+.card-header h2 {
+  margin-bottom: 1rem;
+}
+
+.card-header p {
+  margin-bottom: 0.8rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Tombol */
+.btn {
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Link Sosial Media */
+.card-header a,
+.card-body a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.card-header a:hover,
+.card-body a:hover {
+  text-decoration: underline;
+}
+
+/* Card Body (Keahlian, Pengalaman, dll) */
+.card-body {
+  padding: 2rem;
+}
+
+.card-body h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #333;
+}
+
+.card-body ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-body ul li {
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+}
+
+/* Kontak Card */
+.card.mt-4 {
+  margin-top: 2rem;
+}
+
+.card-body p {
+  margin: 0.4rem 0;
+}
+
+.card-body a {
+  color: #0d6efd;
+}
